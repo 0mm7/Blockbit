@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: none;
+}
+
+label.form-control {
+  @apply w-full block my-1 cursor-pointer;
+}
+
+input.form-control {
+  @apply w-full border-[1px] border-black px-2 rounded-sm font-[16px] text-center py-1;
+}
+
+.text-positive {
+  @apply text-[#17C654] font-semibold;
+}
+
+.text-negative {
+  @apply text-[#FF3A3A] font-semibold;
+}
+
+.text-total {
+  @apply text-blue-600 font-semibold;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  border-radius: 40px;
+  width: 22px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1b1b1b;
+  background-clip: content-box;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #090909;
+  border-radius: 40px;
+  border: 4px solid #1b1b1b;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background: #0f0f0f;
+}
+
+table.table-auto thead tr:nth-child(2) {
+  display: none;
+}
+
+.custom-toast {
+  background-color: #1a202c;
+  /* Change to your desired background color */
+  color: #f7fafc;
+  /* Change to your desired text color */
+  width: 400px;
+  max-width: 500px;
+}
+
+.custom-toast .toastify__toast-body {
+  display: flex;
+  align-items: center;
+}
+
+.custom-toast .toastify__close-button {
+  color: #f7fafc;
+  /* Change to your desired close button color */
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  display: flex;
+  justify-items: center;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: #303030;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  border-radius: 3px;
+  text-transform: none;
+  top: -28px;
+  left: -16px;
+  font-size: 10px;
+  font-weight: 600;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.navbar .wallet-adapter-button {
+  font-size: 0 !important;
+}
+
+.navbar .wallet-adapter-button i {
+  margin-right: 0 !important;
+}

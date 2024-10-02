@@ -1,0 +1,19 @@
+.wallet-adapter-dropdown > .wallet-adapter-button {
+  background: transparent;
+  color: #ffffff;
+  padding: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.wallet-adapter-dropdown > .wallet-adapter-button:hover {
+  background: transparent !important;
+}
+
+.wallet-adapter-dropdown
+  > .wallet-adapter-button
+  > .wallet-adapter-button-start-icon {
+  margin-right: 4px;
+  width: 18px;
+  height: 18px;
+}
